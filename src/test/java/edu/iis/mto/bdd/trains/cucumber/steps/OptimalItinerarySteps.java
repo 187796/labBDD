@@ -1,6 +1,5 @@
 package edu.iis.mto.bdd.trains.cucumber.steps;
 
-import cucumber.api.PendingException;
 import cucumber.api.Transform;
 import cucumber.api.java.pl.Gdy;
 import cucumber.api.java.pl.Wtedy;
@@ -25,7 +24,6 @@ public class OptimalItinerarySteps {
 	@Zakładając("^pociągi linii \"(.*)\" z \"(.*)\" odjeżdżają ze stacji \"(.*)\" do \"(.*)\" o$")
 	public void givenArrivingTrains(String line, String lineStart, String departure, String destination,
 									@Transform(JodaLocalTimeConverter.class) List<LocalTime> departureTimes) {
-		throw new PendingException();
 
 	}
 
